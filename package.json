@@ -13,7 +13,8 @@
   "scripts": {
     "build": "ember build",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "lint": "eslint ."
   },
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",

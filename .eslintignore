@@ -1,0 +1,7 @@
+blueprints
+dist
+tmp
+node_modules
+bower_components
+artifacts
+docs
