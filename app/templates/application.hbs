@@ -1,1 +1,9 @@
+{{#link-to 'index'}}<h2 id="title">Welcome to Ember</h2>{{/link-to}}
+
 {{outlet}}
+
+<ul>
+  {{#each model as |book|}}
+    <li>{{#link-to 'book' book.id}}{{book.title}}{{/link-to}}</li>
+  {{/each}}
+</ul>
