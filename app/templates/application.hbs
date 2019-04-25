@@ -7,3 +7,15 @@
     <li>{{#link-to 'book' book.id}}{{book.title}}{{/link-to}}</li>
   {{/each}}
 </ul>
+
+
+{{#impagination-dataset
+  fetch=fetch
+  page-size=pageSize
+  load-horizon=loadHorizon
+  as |records|}}
+  <div class="records">Total Records: {{records.length}}</div>
+  {{#each records as |record|}}
+    <div class="record">Record {{record.content.id}}</div>
+  {{/each}}
+{{/impagination-dataset}}
